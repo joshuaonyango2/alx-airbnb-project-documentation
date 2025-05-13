@@ -1,4 +1,6 @@
 **User Stories for Airbnb Clone System Interactions**
+
+
 The following user stories are derived from the use case diagram, capturing key interactions between actors (Guest, Host, System) and the system functionalities.
 
 Story 1: As a Guest, I want to register an account so that I can access the platform and book properties for my trips.
