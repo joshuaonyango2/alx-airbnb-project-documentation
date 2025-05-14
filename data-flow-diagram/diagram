@@ -1,0 +1,31 @@
+[Guest] --> [User Registration Process]
+    - Data Input: name, email, password
+    - Data Output: User ID
+
+[Guest] --> [Property Booking Process]
+    - Data Input: property_id, check_in, check_out
+    - Data Output: Booking ID
+
+[Property Booking Process] --> [Payment Process]
+    - Data Input: booking_id, amount
+    - Data Output: Payment Status
+
+[Host] --> [Property Listing Process]
+    - Data Input: title, location, price_per_night, user_id
+    - Data Output: Property ID
+
+[Payment Process] --> [System]
+    - Data Input: payment_status
+    - Data Output: Confirmation to Guest and Host
+
+[User Registration Process] --> [User]
+    - Data Output: User Profile (id, name, email, password, is_host)
+
+[Property Booking Process] --> [Bookings]
+    - Data Output: Booking Details (id, user_id, property_id, check_in, check_out)
+
+[Property Listing Process] --> [Properties]
+    - Data Output: Property Details (id, user_id, title, location, price_per_night)
+
+[Payment Process] --> [Payments]
+    - Data Output: Payment Details (id, booking_id, amount, status)
